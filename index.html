@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="Palin.css">
+
+
+<body>
+<br><br><br>
+<center>
+<h4><h1><u>PALINDROME CHECKER</u></h1></h4>
+<br><br>
+
+ <h3>Enter any word/letter :<input type="text" id="text">
+ <input type="button" id="check" value="check" onclick="palin()"></h3>
+<script type="text/javascript">
+ function palin()
+ {
+	 	revstr="";
+      inputstr=document.getElementById("text").value;
+ 	l=inputstr.length;
+
+ 	for(var k=l;k>=0;k--)
+ 		{
+ 		revstr=revstr+ inputstr.charAt(k);
+ 		//document.write(revstr+"<br>");
+ 		}
+ 	
+ 	if(inputstr==revstr)
+ 		{
+ 		alert(inputstr+" is a palindrome");
+ 		}
+ 		else
+ 			{
+ 			alert(inputstr+" is not a palindrome");
+
+ 			}
+ 		}
+
+ </script>
+ </center>
+</body>
+</html>
